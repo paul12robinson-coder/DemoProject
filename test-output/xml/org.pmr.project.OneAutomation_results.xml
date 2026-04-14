@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="42.540">
+  <properties />
+            <testcase name="validate_registration_functionality" time="22.588" classname="org.pmr.project.OneAutomation">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="element click intercepted: Element is not clickable at point (657, 869)
+  (Session info: chrome=146.0.7680.80)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [389e7f87e903c48923d357598175909c, clickElement {id=f.2CA3C8CE440F59C5AB23780D4CB7730B.d.69DE55603CA9C1805E00B1580E289276.e.143}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\paul1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54674}, goog:processID: 32204, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54674/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (389e7f87e903c48923d357598175909c)] -&gt; css selector: [value=&apos;Create my account&apos;]]
+Session ID: 389e7f87e903c48923d357598175909c"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (657, 869)
+  (Session info: chrome=146.0.7680.80)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [389e7f87e903c48923d357598175909c, clickElement {id=f.2CA3C8CE440F59C5AB23780D4CB7730B.d.69DE55603CA9C1805E00B1580E289276.e.143}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\paul1\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54674}, goog:processID: 32204, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54674/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (389e7f87e903c48923d357598175909c)] -> css selector: [value='Create my account']]
+Session ID: 389e7f87e903c48923d357598175909c
+  org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+  org.pmr.project.OneAutomation.validate_registration_functionality(OneAutomation.java:66)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+  org.testng.TestRunner.privateRun(TestRunner.java:741)
+  org.testng.TestRunner.run(TestRunner.java:616)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+  org.testng.SuiteRunner.run(SuiteRunner.java:312)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+  org.testng.TestNG.runSuites(TestNG.java:1112)
+  org.testng.TestNG.run(TestNG.java:1079)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="validate_login_functionality" time="19.952" classname="org.pmr.project.OneAutomation">
+                <failure type="java.lang.RuntimeException"
+                  message="Unexpected result for screenshot command: null"
+              >
+<![CDATA[java.lang.RuntimeException: Unexpected result for screenshot command: null
+  org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:402)
+  org.pmr.project.CaptureScreenshot.testresults(CaptureScreenshot.java:19)
+  org.pmr.project.OneAutomation.validate_login_functionality(OneAutomation.java:105)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+  java.base/java.lang.reflect.Method.invoke(Method.java:580)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+  org.testng.TestRunner.privateRun(TestRunner.java:741)
+  org.testng.TestRunner.run(TestRunner.java:616)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+  org.testng.SuiteRunner.run(SuiteRunner.java:312)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+  org.testng.TestNG.runSuites(TestNG.java:1112)
+  org.testng.TestNG.run(TestNG.java:1079)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>
